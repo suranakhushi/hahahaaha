@@ -1,0 +1,535 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap");
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: "Inter", sans-serif;
+}
+
+/* Custom Classes [ START ] */
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+input {
+  border: none;
+  outline: none;
+  font-family: inherit;
+}
+
+/* Custom Classes [ END ] */
+
+header {
+  background: #ffffff;
+  height: 8rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0 4px 12px 0 rgba(0, 0, 0, 0.05);
+}
+
+header nav {
+  width: 92%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+header nav .navbar-links {
+  min-width: 50rem;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+header nav .navbar-links a {
+  color: #282c3f;
+  font-size: 1.3rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.03rem;
+  border-bottom: 3px solid #ffffff;
+  padding: 2.9rem 0;
+}
+
+header nav .navbar-links a:hover {
+  border-bottom: 3px solid #f54e77;
+}
+
+header nav .navbar-links a sup {
+  color: #ff3f6c;
+  font-size: 1rem;
+}
+
+header .navbar-search {
+  background-color: #f5f5f6;
+  min-width: 20rem;
+  width: 30%;
+  height: 4rem;
+  display: flex;
+  align-items: center;
+  border-radius: 0.5rem;
+}
+
+header .navbar-search .search-icon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0 1rem;
+}
+
+header .navbar-search input {
+  color: #696e79;
+  background-color: inherit;
+  flex-grow: 1;
+}
+
+header .navbar-icons {
+  min-width: 20rem;
+  display: flex;
+  justify-content: space-evenly;
+}
+
+header .navbar-icons .navbar-icon {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+header .navbar-icons .navbar-icon .title {
+  font-size: 1.1rem;
+  font-weight: 700;
+}
+
+main .banner {
+  margin: 4rem 0;
+}
+
+main .thrift-banner {
+  margin: 4rem 0;
+  width: 80%;
+  height: 90%;
+}
+main .banner img {
+  width: 100%;
+}
+
+main .discounts .title,
+main .categories .title {
+  color: #3e4152;
+  font-size: 2.5rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.15em;
+  margin: 9rem 0 9rem 3rem;
+}
+
+main .discounts .items,
+main .categories .items {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+footer {
+  background: #fafbfc;
+  display: flex;
+  flex-direction: column;
+  padding: 4rem 0;
+}
+
+footer .footer-items {
+  width: 70%;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+footer .footer-items .footer-item {
+  min-width: 15rem;
+  display: flex;
+  flex-direction: column;
+}
+
+footer .footer-items .footer-item h3 {
+  color: #282c3f;
+  font-size: 1.1rem;
+  margin-bottom: 3rem;
+}
+
+footer .footer-items .footer-item a {
+  color: #696b79;
+  font-size: 1.3rem;
+  margin-bottom: 1rem;
+}
+
+footer .copyright {
+  width: 70%;
+  margin: 3rem auto;
+  color: #94969f;
+  font-size: 1.4rem;
+  text-align: right;
+}
+
+@media screen and (max-width: 1200px) {
+  header .navbar-search {
+    display: none;
+  }
+
+  main .discounts .title,
+  main .categories .title {
+    text-align: center;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  header nav .navbar-links {
+    display: none;
+  }
+
+  main .discounts .title,
+  main .categories .title {
+    font-size: 2rem;
+    margin: 6rem 0;
+  }
+}
+
+@media screen and (max-width: 450px) {
+  header {
+    height: 6rem;
+  }
+
+  footer .footer-items {
+    flex-direction: column;
+  }
+
+  footer .footer-items .footer-item {
+    text-align: center;
+    margin-bottom: 5rem;
+  }
+
+  footer .copyright {
+    text-align: center;
+  }
+
+  main .discounts .title,
+  main .categories .title {
+    font-size: 1.5rem;
+    margin: 3rem 0;
+  }
+}
+
+@media screen and (max-width: 350px) {
+  header .navbar-icons {
+    display: none;
+  }
+
+  main .discounts .title,
+  main .categories .title {
+    font-size: 1.2rem;
+  }
+}
+
+
+/* Add this to styles.css */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background: #fafbfc;
+}
+
+header {
+    background: #fff;
+    border-bottom: 1px solid #e0e0e0;
+    height: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+.header-content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 80%;
+}
+
+.logo img {
+    height: 40px;
+}
+
+.navbar-links {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+.navbar-links li a {
+    text-decoration: none;
+    color: #282c3f;
+    font-size: 16px;
+}
+
+.navbar-icons {
+    display: flex;
+    gap: 20px;
+}
+
+.navbar-icons a {
+    text-decoration: none;
+}
+
+.navbar-icons img {
+    height: 20px;
+}
+
+main {
+    display: flex;
+    justify-content: center;
+    padding: 20px 0;
+}
+
+.account-section {
+    width: 80%;
+    display: flex;
+}
+
+.sidebar {
+    width: 20%;
+    padding-right: 20px;
+}
+
+.sidebar h3 {
+    font-size: 24px;
+    color: #282c3f;
+}
+
+.sidebar p {
+    font-size: 18px;
+    color: #696e79;
+}
+
+.sidebar-menu {
+    list-style: none;
+    padding: 0;
+}
+
+.sidebar-menu li {
+    margin: 20px 0;
+}
+
+.sidebar-menu li a {
+    text-decoration: none;
+    font-size: 16px;
+    color: #696e79;
+}
+
+.sidebar-menu li.active a {
+    color: #ff3f6c;
+}
+
+.account-content {
+    width: 80%;
+}
+
+.insider-banner {
+    background: #fafbfc;
+    padding: 20px;
+    border: 1px solid #e0e0e0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.insider-banner p {
+    margin: 0;
+    font-size: 14px;
+    color: #282c3f;
+}
+
+.insider-banner button {
+    background: #ff3f6c;
+    border: none;
+    color: #fff;
+    padding: 10px 20px;
+    font-size: 14px;
+    cursor: pointer;
+}
+
+.orders-returns {
+    background: #fff;
+    padding: 20px;
+    border: 1px solid #e0e0e0;
+}
+
+.orders-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.orders-header h2 {
+    font-size: 24px;
+    color: #282c3f;
+}
+
+.orders-search {
+    display: flex;
+    align-items: center;
+}
+
+.orders-search input {
+    padding: 10px;
+    border: 1px solid #e0e0e0;
+    border-radius: 4px;
+    font-size: 14px;
+    margin-right: 10px;
+}
+
+.orders-search button {
+    background: #e0e0e0;
+    border: none;
+    padding: 10px 20px;
+    font-size: 14px;
+    cursor: pointer;
+}
+
+.order-item {
+    background: #f9f9f9;
+    padding: 20px;
+    border-radius: 4px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.order-status {
+    width: 20%;
+    font-size: 14px;
+    color: #282c3f;
+}
+
+.order-details {
+    width: 50%;
+    display: flex;
+    align-items: center;
+}
+
+.order-details img {
+    width: 80px;
+    height: 80px;
+    object-fit: cover;
+    margin-right: 20px;
+}
+
+.order-details div {
+    font-size: 14px;
+    color: #282c3f;
+}
+
+.order-return {
+    width: 30%;
+    text-align: right;
+}
+
+.order-return p {
+    font-size: 14px;
+    color: #696e79;
+    margin: 5px 0;
+}
+
+.order-rating {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+.order-rating .stars {
+    font-size: 20px;
+    color: #e0e0e0;
+}
+
+.order-rating .stars span {
+    margin: 0 2px;
+    cursor: pointer;
+}
+
+.thrift-button {
+    background: #ff3f6c;
+    border: none;
+    color: #fff;
+    padding: 5px 10px;
+    font-size: 14px;
+    cursor: pointer;
+    margin-top: 10px;
+    border-radius: 4px;
+}
+
+.footer-items {
+    display: flex;
+    justify-content: center;
+    background: #f1f1f1;
+    padding: 20px 0;
+    border-top: 1px solid #e0e0e0;
+}
+
+.footer-item {
+    margin: 0 20px;
+}
+
+.footer-item h3 {
+    font-size: 16px;
+    color: #282c3f;
+}
+
+.footer-item a {
+    display: block;
+    text-decoration: none;
+    color: #696e79;
+    margin: 10px 0;
+    font-size: 14px;
+}
+
+.footer-item a:hover {
+    color: #ff3f6c;
+}
+
+copyright {
+    text-align: center;
+    padding: 10px;
+    background: #f1f1f1;
+    border-top: 1px solid #e0e0e0;
+    font-size: 14px;
+    color: #696e79;
+}
+

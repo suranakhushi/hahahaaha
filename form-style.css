@@ -1,0 +1,305 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: "Inter", sans-serif;
+}
+
+/* Custom Classes [ START ] */
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+input {
+  border: none;
+  outline: none;
+  font-family: inherit;
+}
+
+/* Custom Classes [ END ] */
+
+header {
+  background: #ffffff;
+  height: 8rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0 4px 12px 0 rgba(0, 0, 0, 0.05);
+}
+
+header nav {
+  width: 92%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+header nav .navbar-links {
+  min-width: 50rem;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+header nav .navbar-links a {
+  color: #282c3f;
+  font-size: 1.3rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.03rem;
+  border-bottom: 3px solid #ffffff;
+  padding: 2.9rem 0;
+}
+
+header nav .navbar-links a:hover {
+  border-bottom: 3px solid #f54e77;
+}
+
+header nav .navbar-links a sup {
+  color: #ff3f6c;
+  font-size: 1rem;
+}
+
+header .navbar-search {
+  background-color: #f5f5f6;
+  min-width: 20rem;
+  width: 30%;
+  height: 4rem;
+  display: flex;
+  align-items: center;
+  border-radius: 0.5rem;
+}
+
+header .navbar-search .search-icon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0 1rem;
+}
+
+header .navbar-search input {
+  color: #696e79;
+  background-color: inherit;
+  flex-grow: 1;
+}
+
+header .navbar-icons {
+  min-width: 20rem;
+  display: flex;
+  justify-content: space-evenly;
+}
+
+header .navbar-icons .navbar-icon {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+header .navbar-icons .navbar-icon .title {
+  font-size: 1.1rem;
+  font-weight: 700;
+}
+
+main .banner {
+  margin: 4rem 0;
+}
+
+main .thrift-banner {
+  margin: 4rem 0;
+  width: 80%;
+  height: 90%;
+}
+
+main .banner img {
+  width: 100%;
+}
+
+main .discounts .title,
+main .categories .title {
+  color: #3e4152;
+  font-size: 2.5rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.15em;
+  margin: 9rem 0 9rem 3rem;
+}
+
+main .discounts .items,
+main .categories .items {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+
+
+/* Form Styles */
+.thrift-container {
+  max-width: 800px;
+  margin: 4rem auto;
+  background-color: #fff;
+  padding: 4rem;
+  border: 1px solid #e0e0e0;
+  border-radius: 1rem;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+}
+
+.thrift-container h1 {
+  font-size: 2.8rem;
+  font-weight: 700;
+  color: #ff3f6c;
+  margin-bottom: 2.4rem;
+}
+
+form fieldset {
+  border: 1px solid #e0e0e0;
+  border-radius: 1rem;
+  padding: 2rem;
+  margin-bottom: 2.4rem;
+}
+
+form legend {
+  font-size: 1.8rem;
+  font-weight: 700;
+  color: #282c3f;
+  padding: 0 1rem;
+}
+
+form label {
+  display: block;
+  margin-bottom: 1rem;
+  font-weight: 500;
+  color: #333;
+}
+
+form input[type="text"],
+form input[type="date"],
+form input[type="file"],
+form textarea,
+form select {
+  width: 100%;
+  padding: 1rem;
+  margin-top: 0.5rem;
+  margin-bottom: 1.5rem;
+  border: 1px solid #e0e0e0;
+  border-radius: 0.5rem;
+  font-size: 1.4rem;
+}
+
+form input[type="checkbox"] {
+  margin-right: 1rem;
+}
+
+form button {
+  display: block;
+  width: 100%;
+  padding: 1.5rem;
+  background-color: #ff3f6c;
+  color: #fff;
+  border: none;
+  border-radius: 0.5rem;
+  font-size: 1.6rem;
+  font-weight: 700;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+form button:hover {
+  background-color: #e63359;
+}
+
+@media screen and (max-width: 1200px) {
+  header .navbar-search {
+    display: none;
+  }
+
+  main .discounts .title,
+  main .categories .title {
+    text-align: center;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  header nav .navbar-links {
+    display: none;
+  }
+
+  main .discounts .title,
+  main .categories .title {
+    font-size: 2rem;
+    margin: 6rem 0;
+  }
+
+  .thrift-container {
+    padding: 3rem;
+  }
+
+  .thrift-container h1 {
+    font-size: 2.4rem;
+  }
+
+  form legend {
+    font-size: 1.6rem;
+  }
+
+  form input[type="text"],
+  form input[type="date"],
+  form input[type="file"],
+  form textarea,
+  form select {
+    padding: 0.8rem;
+    font-size: 1.2rem;
+  }
+
+  form button {
+    padding: 1.2rem;
+    font-size: 1.4rem;
+  }
+}
+
+@media screen and (max-width: 450px) {
+  header {
+    height: 6rem;
+  }
+
+  footer .footer-items {
+    flex-direction: column;
+  }
+
+  footer .footer-items .footer-item {
+    text-align: center;
+    margin-bottom: 5rem;
+  }
+
+  footer .copyright {
+    text-align: center;
+  }
+
+  main .discounts .title,
+  main .categories .title {
+    font-size: 1.5rem;
+    margin: 3rem 0;
+  }
+}
+
+@media screen and (max-width: 350px) {
+  header .navbar-icons {
+    display: none;
+  }
+
+  main .discounts .title,
+  main .categories .title {
+    font-size: 1.2rem;
+  }
+}
