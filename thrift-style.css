@@ -116,6 +116,7 @@ main .banner {
 }
 
 main .thrift-banner {
+  display: flex;
   margin: 4rem 0;
   width: 80%;
   height: 90%;
