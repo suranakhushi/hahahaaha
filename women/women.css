@@ -1,0 +1,318 @@
+#parent {
+    margin-top: 20px;
+    display: flex;
+    width: 100%;
+}
+.maindiv > img {
+    width: 220px;
+    height: 300px;
+}
+#products {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 20px;
+    padding: 20px;
+    box-sizing: border-box;
+    justify-content: space-evenly;
+    box-shadow: rgba(0, 0, 0, 0.06) 0px 2px 4px 0px inset;
+}
+#products > div {
+    padding: 10px;
+    line-height: 1.5;
+    font-size: 14px;
+    background: white; /* Added background to each product for better visibility */
+    border: 1px solid #e9e9ed; /* Added border for separation */
+    border-radius: 4px; /* Rounded corners */
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 1px 3px; /* Subtle shadow for depth */
+}
+#categories > h3:first-child {
+    border-bottom: #e9e9ed solid 1px;
+}
+#filter {
+    margin-top: 20px;
+    width: 226px;
+    border-left: none;
+}
+#filter input {
+    width: 15px;
+    height: 15px;
+    margin-right: 12px;
+}
+label {
+    display: flex;
+    align-items: center;
+    margin-top: 8px;
+}
+#filter > div {
+    display: grid;
+    width: 88%;
+    padding: 20px 0px 15px 25px;
+    border-bottom: 1px solid #e9e9ed;
+    border-right: #e9e9ed solid 1px;
+}
+#filter > div > div {
+    display: grid;
+    margin-bottom: 10px;
+}
+#mainbar {
+    margin-top: 20px;
+}
+#nav {
+    width: 60%;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0px 20px;
+}
+#nav select {
+    border: none;
+    padding: 8px;
+    border: 0px;
+    outline: 0px;
+}
+select:hover {
+    background-color: whitesmoke;
+    border-radius: 20px;
+}
+#sort {
+    border: 2px solid #e9e9ed;
+    padding: 5px;
+}
+.wishlist-button {
+    margin-left: 40px;
+    margin-top: 10px;
+    margin-bottom: -5px;
+    width: 55%;
+    background: white;
+    border: #e9e9ed solid 2px;
+    border-radius: 5px;
+}
+.wishlist-button:hover {
+    background: whitesmoke;
+}
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    width: 60%;
+}
+.priceDiv {
+    display: flex;
+    width: 90%;
+    margin-top: -12px;
+    margin-bottom: -10px;
+    align-items: center;
+    justify-content: space-between;
+}
+#infoDiv {
+    padding-left: 5px;
+    box-sizing: border-box;
+}
+#option {
+    display: flex;
+    width: 70%;
+    position: absolute;
+    height: 420px;
+    background: #fff;
+    border-radius: 0px 0px 4px 4px;
+    visibility: hidden;
+}
+#select:hover #option {
+    margin-top: 2.6%;
+    visibility: visible;
+    opacity: 1;
+    box-shadow: 3px 2px 2px 2px black;
+}
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap");
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    font-family: "Inter", sans-serif;
+    color: #282c3f;
+}
+
+/* Custom Classes [ START ] */
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+input {
+    border: none;
+    outline: none;
+    font-family: inherit;
+}
+
+/* Custom Classes [ END ] */
+
+header {
+    background: #ffffff;
+    height: 8rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 4px 12px 0 rgba(0, 0, 0, 0.05);
+}
+
+header nav {
+    width: 92%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header nav .navbar-links {
+    min-width: 50rem;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+header nav .navbar-links a {
+    color: #282c3f;
+    font-size: 1.3rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.03rem;
+    border-bottom: 3px solid #ffffff;
+    padding: 2.9rem 0;
+    position: relative;
+}
+
+header nav .navbar-links a:hover {
+    border-bottom: 3px solid #f54e77;
+}
+
+header nav .navbar-links a sup {
+    color: #ff3f6c;
+    font-size: 1rem;
+    position: relative;
+    top: -0.5em; /* Adjust this value to position the superscript as needed */
+    margin-left: 0.2em; /* Adjust this value to add space between the text and superscript */
+}
+
+header .navbar-search {
+    background-color: #f5f5f6;
+    min-width: 20rem;
+    width: 30%;
+    height: 4rem;
+    display: flex;
+    align-items: center;
+    border-radius: 0.5rem;
+}
+
+header .navbar-search .search-icon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0 1rem;
+}
+
+header .navbar-search input {
+    color: #696e79;
+    background-color: inherit;
+    flex-grow: 1;
+}
+
+header .navbar-icons {
+    min-width: 20rem;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+header .navbar-icons .navbar-icon {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+header .navbar-icons .navbar-icon .title {
+    font-size: 1.1rem;
+    font-weight: 700;
+}
+
+main .banner {
+    margin: 4rem 0;
+}
+
+main .banner img {
+    width: 100%;
+}
+
+main .discounts .title,
+main .categories .title {
+    color: #3e4152;
+    font-size: 2.5rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.15em;
+    margin: 9rem 0 9rem 3rem;
+}
+
+main .discounts .items,
+main .categories .items {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+footer {
+    background: #fafbfc;
+    display: flex;
+    flex-direction: column;
+    padding: 4rem 0;
+}
+
+footer .footer-items {
+    width: 70%;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+footer .footer-items .footer-item {
+    min-width: 15rem;
+    display: flex;
+    flex-direction: column;
+}
+
+footer .footer-items .footer-item h3 {
+    color: #282c3f;
+    font-size: 1.1rem;
+    margin-bottom: 3rem;
+}
+
+footer .footer-items .footer-item a {
+    color: #696b79;
+    font-size: 1.3rem;
+    margin-bottom: 1rem;
+}
+
+footer .footer-items .footer-item a:hover {
+    color: #ff3e6c;
+}
+
+footer .copyright {
+    width: 70%;
+    margin: 3rem auto;
+    color: #94969f;
+    font-size: 1.4rem;
+    text-align: right;
+}
+
+@media screen and (max-width: 1200px) {
+    header .navbar-search {
+        display: none;
+    }
+}
